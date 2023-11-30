@@ -19,6 +19,16 @@
   gap: 8rem;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  padding-top: 8rem;
+}
+
 .card {
   width: 320px;
   height: 230px;
@@ -67,6 +77,11 @@
 
 .more-about {
   color: var(--secondary-blue-text-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .home-section {
@@ -79,12 +94,13 @@
 }
 
 @media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
   .card-content h4 {
     font-size: 16px;
     line-height: 24px;
-  }
-  .card-content p {
-    display: none;
   }
   .about {
     flex-direction: column;
@@ -96,5 +112,13 @@
   }
   .home-section {
     padding: 10rem 2rem;
+  }
+  .more-about {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .more-about img,
+  .more-about article {
+    width: 100%;
   }
 }

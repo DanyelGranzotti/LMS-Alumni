@@ -40,7 +40,7 @@ const Home = () => {
       </section>
       <section className="home-section">
         <h3 className="text-3xl font-bold">Como funciona?</h3>
-        <div className="flex flex-row justify-between items-center gap-x-10 w-full pt-32">
+        <div className="cards">
           <div className="card">
             <span>
               <FiUser size={50} />
@@ -82,7 +82,7 @@ const Home = () => {
       <section className="home-section">
         {reviews && <ReviewCarrosel reviews={reviews} />}
       </section>
-      <section className="more-about flex flex-row justify-between items-end">
+      <section className="more-about">
         <img src="./img/home-bottom.png" alt="home-bottom" className="w-6/12" />
         <article className="text-2xl p-8 font-semibold w-6/12 h-96">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad,

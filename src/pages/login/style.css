@@ -48,3 +48,13 @@
   background-color: var(--light-gray-color);
   min-height: 48px;
 }
+
+@media (max-width: 768px) {
+  .login {
+    padding: 0 24px;
+  }
+  .login-container {
+    padding: 24px;
+    min-width: 0;
+  }
+}
