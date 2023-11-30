@@ -11,11 +11,7 @@ const Register = () => {
   return (
     <main className="register">
       <div className="register-container">
-        <img
-          src="/public/svg/horizontal-logo.svg"
-          alt="logo"
-          className="mb-12"
-        />
+        <img src="./svg/horizontal-logo.svg" alt="logo" className="mb-12" />
         <form onSubmit={handleSubmit}>
           <h1>Faça parte do Alumni.</h1>
 
@@ -35,7 +31,7 @@ const Register = () => {
 
           <button className="b2-btn-layout w-full my-6">Cadastrar</button>
           <button className="google-btn-layout w-full my-4">
-            <img src="/public/svg/google.svg" alt="google" />
+            <img src="./svg/google.svg" alt="google" />
             ou entre com o Google
           </button>
         </form>

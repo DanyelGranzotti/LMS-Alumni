@@ -34,11 +34,11 @@ const About = () => {
         </div>
 
         <div className="about-image-content">
-          <img src="/public/img/about-1.png" alt="about-1" />
+          <img src="./img/about-1.png" alt="about-1" />
         </div>
       </section>
       <section className="about-section-2 ">
-        <img src="/public/img/about-2.png" alt="about-2" />
+        <img src="./img/about-2.png" alt="about-2" />
       </section>
     </main>
   );

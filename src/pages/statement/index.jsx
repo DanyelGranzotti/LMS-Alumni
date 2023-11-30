@@ -34,7 +34,7 @@ const Statement = () => {
         </div>
 
         <div className="statement-image-content">
-          <img src="/public/img/statement-1.png" alt="statement" />
+          <img src="./img/statement-1.png" alt="statement" />
 
           <div className="statement-img-textbox">
             <span className="blue-rectangle"></span>
@@ -48,7 +48,7 @@ const Statement = () => {
         </div>
       </section>
       <section className="statement-section-2">
-        <img src="/public/img/statement-2.png" alt="statement" />
+        <img src="./img/statement-2.png" alt="statement" />
         <div className="flex flex-col justify-between space-y-9 w-full review-card-container ">
           {reviews.map((review, index) => (
             <SmallReviewCard key={index} review={review} />

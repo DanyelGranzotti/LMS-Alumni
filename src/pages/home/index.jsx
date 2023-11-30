@@ -22,11 +22,11 @@ const Home = () => {
   return (
     <main>
       <section className="hero">
-        <img src="/public/img/hero.png" alt="hero" />
+        <img src="./img/hero.png" alt="hero" />
       </section>
       <section className="about">
         <div className="w-4/12">
-          <img src="/public/img/horizontal-logo.png" alt="logo" />
+          <img src="./img/horizontal-logo.png" alt="logo" />
         </div>
         <div className="w-8/12">
           <p className="text-2xl">
@@ -83,11 +83,7 @@ const Home = () => {
         {reviews && <ReviewCarrosel reviews={reviews} />}
       </section>
       <section className="more-about flex flex-row justify-between items-end">
-        <img
-          src="/public/img/home-bottom.png"
-          alt="home-bottom"
-          className="w-6/12"
-        />
+        <img src="./img/home-bottom.png" alt="home-bottom" className="w-6/12" />
         <article className="text-2xl p-8 font-semibold w-6/12 h-96">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ad,
           autem, ut accusantium mollitia itaque saepe provident quis, cum
