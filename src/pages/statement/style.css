@@ -1,0 +1,124 @@
+.statement-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8rem;
+  gap: 8rem 0;
+}
+
+.statement-section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  gap: 3rem 0;
+}
+
+.statement-section h3 {
+  color: var(--blue-text-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.statement-section p {
+  color: var(--gray-text-color);
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.statement-image-content {
+  position: relative;
+  max-width: 619px;
+  height: 801px;
+  border-radius: 20px;
+}
+
+.statement-image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.blue-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 100%;
+  background-color: var(--secondary-blue-color);
+  border-radius: 20px 0 0 20px;
+}
+
+.statement-img-textbox {
+  position: absolute;
+  bottom: 2rem;
+  right: -5rem;
+  padding: 2rem;
+  max-width: 580px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  box-shadow: 2px 4px 60px 0px rgba(41, 44, 124, 0.1);
+}
+
+.statement-img-textbox p {
+  text-align: left;
+  color: var(--gray-text-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.statement-img-textbox h6 {
+  text-align: left;
+  color: var(--gray-text-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.statement-section-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8rem;
+  gap: 8rem;
+}
+
+.statement-section-2 img {
+  max-height: 1000px;
+  border-radius: 20px;
+}
+
+.statement-section-2 {
+  height: 1000px;
+}
+
+.review-card-container {
+  overflow-y: scroll;
+  max-height: 1000px;
+}
+
+@media (max-width: 768px) {
+  .statement-section-2 {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .statement-section-2 img {
+    display: none;
+  }
+
+  .statement-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .statement-section-info {
+    width: 100%;
+  }
+  .statement-img-textbox {
+    right: 5px;
+  }
+}

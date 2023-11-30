@@ -1,0 +1,100 @@
+.hero {
+  background: var(--blue-color);
+}
+
+.hero img {
+  position: relative;
+  width: 100%;
+  z-index: 101;
+}
+
+.about {
+  background: var(--blue-color);
+  color: var(--white-text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  gap: 8rem;
+}
+
+.card {
+  width: 320px;
+  height: 230px;
+  background: var(--white-color);
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card span {
+  background-color: var(--secondary-blue-color);
+  color: var(--white-text-color);
+  width: 85px;
+  height: 85px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 32px;
+  margin-top: -42px;
+  z-index: 1;
+}
+
+.card-content {
+  padding: 24px 32px;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--blue-text-color);
+}
+
+.card-content p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-text-color);
+}
+
+.more-about {
+  color: var(--secondary-blue-text-color);
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10rem 13rem;
+}
+
+@media (max-width: 768px) {
+  .card-content h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card-content p {
+    display: none;
+  }
+  .about {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem 0;
+  }
+  .about div {
+    width: 100%;
+  }
+  .home-section {
+    padding: 10rem 2rem;
+  }
+}
