@@ -96,7 +96,7 @@
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
   }
   .card-content h4 {
     font-size: 16px;
